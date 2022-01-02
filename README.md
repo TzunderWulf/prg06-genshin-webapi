@@ -1,5 +1,5 @@
 # Simple web-api
-A simple web-api built as an assignment for school (PRG06) with it's subject being characters of _Genshin Impact_. As the title suggest, it's a rather simple web-api, with not too many layers added.
+A simple web-api built as an assignment for school (PRG06) with it's subject being characters of _Genshin Impact_. As the title suggest, it's a rather simple web-api, with not too many layers added. It features an index page with all characters stored, only showing their name. Each characters also has a detail page, with their full information showed.
 
 ## Data contained within
 Each character has the following information:
