@@ -8,12 +8,12 @@ let routes = () => {
 
   // only continue execution, if the 'accept' header is JSON
   characterRouter.use("/", (req, res, next) => {
-    if (req.headers.accept == "application/json") {
-      res.header("Access-Control-Allow-Origin", "*");
-      res.header(
-        "Access-Control-Allow-Headers",
-        "Origin, X-Requested-With, Content-Type, Accept"
-      );
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header(
+      "Access-Control-Allow-Headers",
+      "Origin, X-Requested-With, Content-Type, Accept"
+    );
+    if (req.headers.accept == "application/json" || req.method == 'OPTIONS') {
       next();
     } else {
       res
